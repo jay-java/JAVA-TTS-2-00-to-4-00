@@ -1,0 +1,19 @@
+package core;
+
+public class P004_TypeCasting {
+	public static void main(String[] args) {
+		byte b = 12;//1
+		int i = b;//4
+		System.out.println(i);
+		
+		
+		int j = 12;//4
+		byte b1 = (byte)j;//1
+		System.out.println(b1);
+		
+		
+		int a = 10,d= 2,c;
+		c = a/d;
+		System.out.println(c);
+	}
+}

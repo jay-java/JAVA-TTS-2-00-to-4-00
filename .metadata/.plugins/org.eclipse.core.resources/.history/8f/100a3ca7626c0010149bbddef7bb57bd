@@ -1,0 +1,7 @@
+package core;
+
+public class P005_Conditions {
+	public static void main(String[] args) {
+		
+	}
+}

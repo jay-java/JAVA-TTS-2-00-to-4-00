@@ -1,0 +1,7 @@
+package core;
+
+public class P002_DataType {
+	public static void main(String[] args) {
+		
+	}
+}

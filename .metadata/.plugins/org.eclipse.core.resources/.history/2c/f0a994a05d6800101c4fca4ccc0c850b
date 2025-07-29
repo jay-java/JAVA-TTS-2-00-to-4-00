@@ -1,0 +1,16 @@
+package core;
+
+public class P002_DataType {
+	public static void main(String[] args) {
+		//Primitive 
+		//byte,short,int,long
+		//float,double
+		//boolean,char
+		
+		byte b = 12;
+		short s = 12;
+		int i = 12;
+		long l = 12;
+		
+	}
+}
