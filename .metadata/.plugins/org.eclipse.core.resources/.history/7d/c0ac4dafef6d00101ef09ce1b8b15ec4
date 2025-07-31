@@ -1,0 +1,9 @@
+package core;
+class QQQ{
+	
+}
+public class P008_ClassObject {
+	public static void main(String[] args) {
+		
+	}
+}

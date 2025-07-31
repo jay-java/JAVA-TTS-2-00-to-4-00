@@ -1,0 +1,12 @@
+package core;
+
+public class P011_String {
+	public static void main(String[] args) {
+		char[] c=  {'J','A','V','A'};
+		System.out.println(c);
+		
+		String name ="1";
+		System.out.println(name);
+		
+	}
+}

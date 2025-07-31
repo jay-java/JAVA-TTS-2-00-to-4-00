@@ -23,5 +23,14 @@ public class P004_TypeCasting {
 		int a = 10,d= 3;
 		double c = (double)a/(double)d;
 		System.out.println(c);
+		
+		String s = "1";
+		int s_int = Integer.parseInt(s);
+		System.out.println(s_int);
+		
+		int q = 12;
+		String s1 = String.valueOf(q);
+		System.out.println(s1);
+		
 	}
 }
