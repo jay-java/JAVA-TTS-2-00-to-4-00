@@ -1,0 +1,36 @@
+package core;
+
+import java.util.Scanner;
+class Call{
+	int i;
+	String name;
+	double value;
+	Call(){
+		System.out.println("default cons");
+	}
+	
+	Call(int i){
+		System.out.println(i);
+	}
+	
+	
+	
+	
+	public int getSqaure(int num) {
+		System.out.println("num coming from main : "+num);
+		return num*num;
+	}
+}
+public class P012_Constructor {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter number to get square : ");
+		Call c= new Call();
+		int num = sc.nextInt();
+		int res = c.getSqaure(num);
+		System.out.println("res : "+res);
+		
+		Call c1 = new Call(12);
+		
+	}
+}

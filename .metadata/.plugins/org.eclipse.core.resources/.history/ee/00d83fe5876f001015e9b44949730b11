@@ -1,0 +1,16 @@
+package core;
+
+import java.util.Scanner;
+class Call{
+	public int getSqaure(int num) {
+		return num*num;
+	}
+}
+public class P012_Constructor {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter number to get square : ");
+		
+		
+	}
+}

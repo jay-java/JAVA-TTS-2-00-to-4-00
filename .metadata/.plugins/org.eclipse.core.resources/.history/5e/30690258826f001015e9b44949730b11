@@ -1,0 +1,21 @@
+package core;
+
+public class P011_String {
+	public static void main(String[] args) {
+		char[] c=  {'J','A','V','A'};
+		System.out.println(c);
+		
+		String name ="hello java";
+		System.out.println(name);
+		System.out.println(name.length());
+		System.out.println(name.charAt(6));
+		
+		String s1 = "java";
+		System.out.println(s1.concat(name));
+		System.out.println(s1);
+		
+		String s2 = "Java";
+		System.out.println(s1.compareTo(s2));
+		System.out.println(s1.compareToIgnoreCase(s2));
+	}
+}

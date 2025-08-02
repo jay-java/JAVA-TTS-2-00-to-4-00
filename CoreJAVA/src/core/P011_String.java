@@ -9,5 +9,39 @@ public class P011_String {
 		System.out.println(name);
 		System.out.println(name.length());
 		System.out.println(name.charAt(6));
+		
+		String s1 = "java";
+		System.out.println(s1.concat(name));
+		System.out.println(s1);
+		
+		String s2 = "Java";
+		String s3 = new String("java");
+		System.out.println(s3);
+		System.out.println(s1.compareTo(s2));
+		System.out.println(s1.compareToIgnoreCase(s2));
+		System.out.println(s1.equals(s2));
+		System.out.println(s1.equalsIgnoreCase(s2));
+		System.out.println(s1);
+		s1 = "java again";
+		System.out.println(s1);
+		
+		System.out.println(s1.contains("va"));
+		
+		if(s1 == s3) {
+			System.out.println("same");
+		}
+		else {
+			System.out.println("not same");
+		}
+		
+		
+		String s4 ="		ja va			";
+		System.out.println(s4.trim());
+		
+		String s5 ="  ";
+		System.out.println(s5.isBlank());
+		System.out.println(s5.isEmpty());
+		
+		
 	}
 }
