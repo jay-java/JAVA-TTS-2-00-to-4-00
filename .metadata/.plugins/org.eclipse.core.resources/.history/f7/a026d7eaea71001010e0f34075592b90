@@ -10,15 +10,10 @@ public class P013_Task {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String c;
-
+		
 		int amount = 0;
 		int counter = 0;
-		int bill = 0;
 		do {
-			System.out.println("small -> 150 ->4 -> offer (500 ml coke free)\r\n"
-					+ "medium -> 250-> 3 -> offer (1 ltr coke free)\r\n"
-					+ "large -> -> 500 ->2 -> offer (500 coke + ice cream)\r\n"
-					+ "monster -> 750-> 1 > offer (1ltr + ice cream)");
 			System.out.println("select size : ");
 			String size = sc.next();
 			int qty;
@@ -28,11 +23,8 @@ public class P013_Task {
 				if (qty >= 4) {
 					amount = qty * 150;
 					counter = qty / 4;
-
-					bill += amount;
 				} else {
 					amount = qty * 150;
-					bill += amount;
 				}
 
 			} else if (size.equals("medium")) {
@@ -41,10 +33,8 @@ public class P013_Task {
 				if (qty >= 3) {
 					amount = qty * 250;
 					counter = qty / 3;
-					bill += amount;
 				} else {
 					amount = qty * 250;
-					bill += amount;
 				}
 
 			} else if (size.equals("large")) {
@@ -53,10 +43,8 @@ public class P013_Task {
 				if (qty >= 2) {
 					amount = qty * 500;
 					counter = qty / 2;
-					bill += amount;
 				} else {
 					amount = qty * 500;
-					bill += amount;
 				}
 
 			} else if (size.equals("monster")) {
@@ -65,10 +53,8 @@ public class P013_Task {
 				if (qty >= 1) {
 					amount = qty * 750;
 					counter = qty / 1;
-					bill += amount;
 				} else {
 					amount = qty * 750;
-					bill += amount;
 				}
 
 			}
@@ -78,7 +64,5 @@ public class P013_Task {
 			System.out.println("Do you want anything else ? : Yes/No");
 			c = sc.next();
 		} while (c.equals("yes"));
-
-		System.out.println(bill);
 	}
 }
