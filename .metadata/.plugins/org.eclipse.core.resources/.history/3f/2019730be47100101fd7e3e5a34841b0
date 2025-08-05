@@ -1,0 +1,19 @@
+package core;
+
+import java.util.Scanner;
+
+//small -> 150 ->4 -> offer (500 ml coke free)
+//medium -> 250-> 3 -> offer (1 ltr coke free)
+//large -> -> 500 ->2 -> offer (500 coke + ice cream)
+//monster -> 750-> 1 > offer (1ltr + ice cream)
+public class P013_Task {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("select size : ");
+		String size = sc.next();
+		
+		if(size.equals("small")) {
+			
+		}
+	}
+}

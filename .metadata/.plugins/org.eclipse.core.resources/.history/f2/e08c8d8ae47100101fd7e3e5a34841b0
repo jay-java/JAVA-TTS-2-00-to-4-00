@@ -1,0 +1,56 @@
+package core;
+
+import java.util.Scanner;
+
+//small -> 150 ->4 -> offer (500 ml coke free)
+//medium -> 250-> 3 -> offer (1 ltr coke free)
+//large -> -> 500 ->2 -> offer (500 coke + ice cream)
+//monster -> 750-> 1 > offer (1ltr + ice cream)
+public class P013_Task {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("select size : ");
+		String size = sc.next();
+		int qty;
+		int amount = 0;
+		int counter =0;
+		if (size.equals("small")) {
+			System.out.println("enter qty : ");
+			qty = sc.nextInt();
+			if (qty >= 4) {
+				
+			} else {
+				amount = qty * 150;
+			}
+
+		} else if (size.equals("medium")) {
+			System.out.println("enter qty : ");
+			qty = sc.nextInt();
+			if (qty >= 3) {
+
+			} else {
+				amount = qty * 250;
+			}
+
+		} else if (size.equals("large")) {
+			System.out.println("enter qty : ");
+			qty = sc.nextInt();
+			if (qty >= 2) {
+
+			} else {
+				amount = qty * 500;
+			}
+			
+
+		} else if (size.equals("monster")) {
+			System.out.println("enter qty : ");
+			qty = sc.nextInt();
+			if (qty >= 1) {
+
+			} else {
+				amount = qty * 750;
+			}
+
+		}
+	}
+}

@@ -1,7 +1,0 @@
-package core;
-
-public class P004_TypeCasting {
-	public static void main(String[] args) {
-		
-	}
-}
