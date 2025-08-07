@@ -1,0 +1,77 @@
+package core;
+
+class Student {
+	private int rollno;
+	private String name;
+	private double per;
+	private String address;
+
+	Student() {
+		System.out.println("def cons");
+	}
+
+	Student(int rollno, String name, double per, String address) {
+		this.rollno = rollno;
+		this.name = name;
+		this.per = per;
+		this.address = address;
+	}
+
+	public void setRollno(int rollno) {
+		this.rollno = rollno;
+	}
+
+	public int getRollno() {
+		return rollno;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setPer(double per) {
+		this.per = per;
+	}
+
+	public double getPer() {
+		return per;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+	
+	
+}
+
+public class P014_Encapsulation {
+	public static void main(String[] args) {
+		Student s = new Student();
+		s.setRollno(1);
+		s.setName("java");
+		s.setPer(87.34);
+		s.setAddress("ahmedabad");
+		System.out.println(s.getRollno());
+		System.out.println(s.getName());
+		System.out.println(s.getPer());
+		System.out.println(s.getAddress());
+		
+		
+		Student s1 = new Student(2,"dart", 56.56, "delhi");
+		System.out.println(s1.getRollno());
+		System.out.println(s1.getName());
+		System.out.println(s1.getPer());
+		System.out.println(s1.getAddress());
+		
+		System.out.println(s1);
+	}
+}

@@ -1,0 +1,57 @@
+package core;
+
+abstract class RBI{
+	abstract public void interest();
+	abstract public void HL();
+}
+class SBI extends RBI{
+
+	@Override
+	public void interest() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void HL() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}
+class PNB extends RBI{
+
+	@Override
+	public void interest() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void HL() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}
+
+class JAVA extends RBI{
+
+	@Override
+	public void interest() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void HL() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}
+public class P017_Abstraction {
+	public static void main(String[] args) {
+		
+	}
+}

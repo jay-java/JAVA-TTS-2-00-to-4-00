@@ -1,0 +1,8 @@
+package core;
+
+
+public class P014_Encapsulation {
+	public static void main(String[] args) {
+		
+	}
+}

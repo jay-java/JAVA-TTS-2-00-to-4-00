@@ -1,0 +1,23 @@
+package core;
+
+class A{ //parent-BASE
+	A(){
+		System.out.println("def cons A");
+	}
+	public void classA() {
+		System.out.println("class A fun");
+	}
+}
+class B{//child-derived
+	B(){
+		System.out.println("def cons B");
+	}
+	public void classB() {
+		System.out.println("class B fun");
+	}
+}
+public class P015_Inheritance {
+	public static void main(String[] args) {
+		
+	}
+}

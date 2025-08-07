@@ -1,0 +1,12 @@
+package core;
+
+class XYZ{
+	public void call() {
+		System.out.println("call fun");
+	}
+}
+public class P017_StaticKey {
+	public static void main(String[] args) {
+		
+	}
+}

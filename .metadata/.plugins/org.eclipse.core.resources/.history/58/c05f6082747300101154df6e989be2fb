@@ -1,0 +1,21 @@
+package core;
+
+class RBI{
+	abstract public void interest();
+	abstract public void HL();
+}
+class SBI extends RBI{
+	
+}
+class PNB extends RBI{
+	
+}
+
+class JAVA extends RBI{
+	
+}
+public class P017_Abstraction {
+	public static void main(String[] args) {
+		
+	}
+}

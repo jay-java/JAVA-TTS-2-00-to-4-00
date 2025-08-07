@@ -1,0 +1,43 @@
+package core;
+
+//single
+class A{ //parent-BASE
+	A(){
+		System.out.println("def cons A");
+	}
+	public void classA() {
+		System.out.println("class A fun");
+	}
+}
+class B extends A{//child-derived
+	B(){
+		System.out.println("def cons B");
+	}
+	public void classB() {
+		System.out.println("class B fun");
+	}
+}
+class C extends B{//child-derived
+	C(){
+		System.out.println("def cons C");
+	}
+	public void classC() {
+		System.out.println("class C fun");
+	}
+}
+class D extends A{
+	D(){
+		System.out.println("def cons D");
+	}
+	public void classD() {
+		System.out.println("class D fun");
+	}
+}
+
+public class P015_Inheritance {
+	public static void main(String[] args) {
+		B b = new B();
+		b.classA();
+		b.classB();
+	}
+}

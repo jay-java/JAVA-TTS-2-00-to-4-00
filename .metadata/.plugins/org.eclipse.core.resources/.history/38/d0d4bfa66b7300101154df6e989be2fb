@@ -1,0 +1,15 @@
+package core;
+class Student{
+	int rollno;
+	String name;
+	double per;
+	String address;
+	
+	
+}
+public class P014_Encapsulation {
+	public static void main(String[] args) {
+		Student s = new Student();
+		
+	}
+}

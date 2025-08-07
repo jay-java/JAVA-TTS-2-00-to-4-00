@@ -1,0 +1,45 @@
+package core;
+
+class Student {
+	int rollno;
+	String name;
+	double per;
+	String address;
+
+	public void setRollno(int rollno) {
+		this.rollno = rollno;
+	}
+
+	public int getRollno() {
+		return rollno;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+
+	}
+	public String getName() {
+		return name;
+	}
+	
+	public void setPer(double per) {
+		this.per = per;
+	}
+	public double getPer() {
+		return per;
+	}
+	
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public String getAddress() {
+		return address;
+	}
+}
+
+public class P014_Encapsulation {
+	public static void main(String[] args) {
+		Student s = new Student();
+
+	}
+}

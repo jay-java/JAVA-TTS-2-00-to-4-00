@@ -1,0 +1,55 @@
+package core;
+
+abstract class RBI {
+	abstract public void interest();
+
+	abstract public void HL();
+}
+
+class SBI extends RBI {
+
+	public void interest() {
+		// TODO Auto-generated method stub
+		System.out.println("SBI interest  : 4%");
+	}
+
+	public void HL() {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class PNB extends RBI {
+
+	public void interest() {
+		// TODO Auto-generated method stub
+		System.out.println("PNB interest  : 4.5%");
+	}
+
+	public void HL() {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class JAVA extends RBI {
+
+	public void interest() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void HL() {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+public class P017_Abstraction {
+	public static void main(String[] args) {
+
+	}
+}

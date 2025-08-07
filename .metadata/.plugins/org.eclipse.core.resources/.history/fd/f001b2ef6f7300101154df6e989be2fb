@@ -1,0 +1,22 @@
+package core;
+
+class Overload {
+	public int add(int a, int b) {
+		return a + b;
+	}
+
+	public int add(int a, int b, int c) {
+		return a + b + c;
+	}
+
+	public int add(int a, int b, int c, int d) {
+		return a + b + c + d;
+	}
+}
+
+public class P016_Polymorphism {
+	public static void main(String[] args) {
+		Overload o = new Overload();
+		o.add(1, 2);
+	}
+}

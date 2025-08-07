@@ -1,0 +1,20 @@
+package core;
+
+class RBI{
+	
+}
+class SBI{
+	
+}
+class PNB{
+	
+}
+
+class JAVA{
+	
+}
+public class P017_Abstraction {
+	public static void main(String[] args) {
+		
+	}
+}

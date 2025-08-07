@@ -4,4 +4,11 @@
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="core.Call"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="core.Student"/>
+    <fullyQualifiedTypeName name="core.Overload"/>
+    <fullyQualifiedTypeName name="core.Override"/>
+    <fullyQualifiedTypeName name="core.SBI"/>
+    <fullyQualifiedTypeName name="core.PNB"/>
+    <fullyQualifiedTypeName name="core.JAVA"/>
+    <fullyQualifiedTypeName name="core.XYZ"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,8 @@
+package core;
+
+
+public class P017_StaticKey {
+	public static void main(String[] args) {
+		
+	}
+}
