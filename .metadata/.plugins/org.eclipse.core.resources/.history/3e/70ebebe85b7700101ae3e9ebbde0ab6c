@@ -1,0 +1,19 @@
+package core;
+
+interface inter1 {
+	
+}
+
+interface inter2 {
+
+}
+
+interface inter3 {
+
+}
+
+public class P020_Interface {
+	public static void main(String[] args) {
+
+	}
+}

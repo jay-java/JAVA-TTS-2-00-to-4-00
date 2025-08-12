@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class P010_Array {
 	public static void main(String[] args) {
 		int[] a = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+		System.out.println(a[10]);
 		for (int index = 0; index < a.length; index++) {
 			System.out.println(a[index]);
 		}

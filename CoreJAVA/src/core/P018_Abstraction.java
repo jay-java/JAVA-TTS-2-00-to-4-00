@@ -8,6 +8,10 @@ abstract class RBI {
 	public static void repoRate() {
 		System.out.println("+-4%");
 	}
+	
+	public void call() {
+		System.out.println("call in abstract class");
+	}
 }
 
 class SBI extends RBI {
@@ -57,6 +61,8 @@ public class P018_Abstraction {
 		SBI s = new SBI();
 		s.interest();
 		s.HL();
+		s.repoRate();
+		s.call();
 		PNB p = new PNB();
 		p.interest();
 		p.HL();

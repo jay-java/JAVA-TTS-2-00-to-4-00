@@ -1,0 +1,69 @@
+package core;
+
+abstract class RBI {
+	abstract public void interest();
+
+	abstract public void HL();
+	
+	public static void repoRate() {
+		System.out.println("+-4%");
+	}
+}
+
+class SBI extends RBI {
+
+	public void interest() {
+		// TODO Auto-generated method stub
+		System.out.println("SBI interest  : 4%");
+	}
+
+	public void HL() {
+		// TODO Auto-generated method stub
+		System.out.println("SBI HL 7.5%");
+	}
+
+}
+
+class PNB extends RBI {
+
+	public void interest() {
+		// TODO Auto-generated method stub
+		System.out.println("PNB interest  : 4.5%");
+	}
+
+	public void HL() {
+		// TODO Auto-generated method stub
+		System.out.println("PNB HL 6.5%");
+	}
+
+}
+
+class JAVA extends RBI {
+
+	public void interest() {
+		// TODO Auto-generated method stub
+		System.out.println("JAVA interest  : 5%");
+	}
+
+	public void HL() {
+		// TODO Auto-generated method stub
+		System.out.println("JAVA HL 8.5%");
+	}
+
+}
+
+public class P018_Abstraction {
+	public static void main(String[] args) {
+		SBI s = new SBI();
+		s.interest();
+		s.HL();
+		PNB p = new PNB();
+		p.interest();
+		p.HL();
+		JAVA j = new JAVA();
+		j.interest();
+		j.HL();
+		
+		SBI.repoRate();
+	}
+}

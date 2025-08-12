@@ -1,0 +1,20 @@
+package core;
+
+class X{
+	final int i=1;
+	public void change() {
+//		i++;
+		System.out.println(i);
+	}
+}
+class Y extends X{
+	public void change() {
+		System.out.println("change fun in Y class");
+	}
+}
+public class P019_Final {
+	public static void main(String[] args) {
+		X x = new X();
+		x.change();
+	}
+}

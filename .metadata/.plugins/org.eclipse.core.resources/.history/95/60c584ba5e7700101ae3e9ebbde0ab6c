@@ -1,0 +1,7 @@
+package core;
+
+public class P021_Exception {
+	public static void main(String[] args) {
+		
+	}
+}
