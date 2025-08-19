@@ -1,0 +1,45 @@
+package core;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+class Data implements Serializable{
+	private int id;
+	private String name;
+	private String address;
+	private long contact;
+
+	Data(int id, String name, String address, long contact) {
+		this.id = id;
+		this.name = name;
+		this.address = address;
+		this.contact = contact;
+	}
+	
+	public String toString() {
+		return "id : "+id+" name : "+name+" address : "+address+" contact : "+contact;
+	}
+}
+
+public class P025_Serailization {
+	public static void main(String[] args) throws IOException {
+		Data d1 = new Data(1, "java", "ahmedabad", 987651);
+		
+//		FileOutputStream fos = new FileOutputStream("data.txt");
+//		ObjectOutputStream oos = new ObjectOutputStream(fos);
+//		oos.writeObject(d1);
+//		oos.flush();
+//		oos.close();
+//		System.out.println("done");
+		
+		
+		FileInputStream fis = new FileInputStream("data.txt");
+		ObjectInputStream ois = new ObjectInputStream(fis);
+		 ois.readObject();
+		
+	}
+}

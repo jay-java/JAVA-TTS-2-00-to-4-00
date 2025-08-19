@@ -1,0 +1,10 @@
+package core;
+
+class User{
+	
+}
+public class P025_Serailization {
+	public static void main(String[] args) {
+		
+	}
+}

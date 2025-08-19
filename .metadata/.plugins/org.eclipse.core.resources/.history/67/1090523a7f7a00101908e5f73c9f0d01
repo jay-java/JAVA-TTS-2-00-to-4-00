@@ -1,0 +1,24 @@
+package core;
+
+import java.util.Scanner;
+
+class AB {
+	int id;
+	String name;
+
+	AB() {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("enter id : ");
+		this.id = sc.nextInt();
+
+		System.out.println("enter name : ");
+		this.name = sc.next();
+	}
+}
+
+public class P022_Neww {
+	public static void main(String[] args) {
+
+	}
+}

@@ -1,7 +1,0 @@
-package core;
-
-public class P020_Interface {
-	public static void main(String[] args) {
-		
-	}
-}

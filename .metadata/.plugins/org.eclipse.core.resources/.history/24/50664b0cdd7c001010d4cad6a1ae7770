@@ -1,0 +1,13 @@
+package core;
+
+import java.io.FileWriter;
+
+public class P024_FileWriterReadre {
+	public static void main(String[] args) {
+		
+		String msg = "this msg will stored into file";
+		
+		FileWriter fr= new FileWriter("t2.txt");
+		fr.write(msg);
+	}
+}

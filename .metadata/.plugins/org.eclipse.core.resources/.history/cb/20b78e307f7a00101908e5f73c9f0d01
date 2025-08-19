@@ -1,0 +1,14 @@
+package core;
+
+class AB{
+	int id;
+	String name;
+	AB(){
+		
+	}
+}
+public class P022_Neww {
+	public static void main(String[] args) {
+		
+	}
+}

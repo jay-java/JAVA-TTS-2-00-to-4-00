@@ -1,7 +1,0 @@
-package core;
-
-public class P013_Task {
-	public static void main(String[] args) {
-		
-	}
-}

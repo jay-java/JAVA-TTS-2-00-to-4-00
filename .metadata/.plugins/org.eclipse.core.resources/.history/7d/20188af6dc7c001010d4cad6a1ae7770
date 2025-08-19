@@ -1,0 +1,8 @@
+package core;
+
+public class P024_FileWriterReadre {
+	public static void main(String[] args) {
+		
+		
+	}
+}

@@ -1,8 +1,0 @@
-package core;
-
-
-public class P015_Inheritance {
-	public static void main(String[] args) {
-		
-	}
-}

@@ -1,0 +1,29 @@
+package core;
+
+import java.io.FileOutputStream;
+
+class Data {
+	private int id;
+	private String name;
+	private String address;
+	private long contact;
+
+	Data(int id, String name, String address, long contact) {
+		this.id = id;
+		this.name = name;
+		this.address = address;
+		this.contact = contact;
+	}
+	
+	public String toString() {
+		return "id : "+id+" name : "+name+" address : "+address+" contact : "+contact;
+	}
+}
+
+public class P025_Serailization {
+	public static void main(String[] args) {
+		Data d1 = new Data(1, "java", "ahmedabad", 987651);
+		
+		FileOutputStream fos = new FileOutputStream("data.txt");
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;core.P022_FileHnadlign&apos; to &apos;P023_FileHnadling&apos;&#x0D;&#x0A;- Original project: &apos;CoreJAVA&apos;&#x0D;&#x0A;- Original element: &apos;core.P022_FileHnadlign&apos;&#x0D;&#x0A;- Renamed element: &apos;core.P023_FileHnadling&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;P022_FileHnadlign&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;core{P022_FileHnadlign.java[P022_FileHnadlign" matchStrategy="1" name="P023_FileHnadling" qualified="false" references="true" similarDeclarations="false" stamp="1755593973631" textual="false" version="1.0"/>
+</session>
