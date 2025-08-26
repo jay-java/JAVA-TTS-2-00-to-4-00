@@ -1,0 +1,10 @@
+package core;
+
+public class P026_Thread {
+	public static void main(String[] args) {
+		System.out.println(Thread.currentThread());
+		Thread t = new Thread();
+		t.setName("MyTHread");
+		System.out.println(t);
+	}
+}

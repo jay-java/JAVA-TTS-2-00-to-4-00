@@ -1,9 +1,0 @@
-package core;
-
-public class P023_FileHnadling {
-	public static void main(String[] args) {
-		
-		String msg = "this msg will stored into file";
-		
-	}
-}

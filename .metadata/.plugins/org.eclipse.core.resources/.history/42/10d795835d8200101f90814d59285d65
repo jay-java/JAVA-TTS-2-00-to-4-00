@@ -1,0 +1,8 @@
+package core;
+
+public class P026_Thread {
+	public static void main(String[] args) {
+		Thread t = new Thread();
+		System.out.println(Thread.currentThread());
+	}
+}
