@@ -1,0 +1,45 @@
+package core;
+
+import java.util.ArrayList;
+import java.util.List;
+
+class Laptop {
+	private int ram;
+	private String model;
+	private double price;
+
+	public Laptop() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Laptop(int ram, String model, double price) {
+		super();
+		this.ram = ram;
+		this.model = model;
+		this.price = price;
+	}
+
+	public String toString() {
+		return "Laptop [ram=" + ram + ", model=" + model + ", price=" + price + "]";
+	}
+	
+
+}
+
+public class P029_ListPractical {
+	public static void main(String[] args) {
+		Laptop l1 = new Laptop(4, "lenovo", 40000.435);
+		Laptop l2 = new Laptop(6, "hp", 50000.435);
+		Laptop l3 = new Laptop(8, "asus", 60000.435);
+		Laptop l4 = new Laptop(10, "mac", 76000.435);
+		Laptop l5 = new Laptop(12, "dell", 87000.435);
+		
+		List<Laptop> list = new  ArrayList<Laptop>();
+		list.add(l1);
+		list.add(l2);
+		list.add(l3);
+		list.add(l4);
+		list.add(l5);
+	}
+}

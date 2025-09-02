@@ -52,7 +52,7 @@ public class P026_Thread {
 		}
 		
 		MyThread t1 = new MyThread();
-		t1.run();
+		t1.start();
 		
 		MyNewThread t2 = new MyNewThread();
 		t2.run();

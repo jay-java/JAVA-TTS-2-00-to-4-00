@@ -1,0 +1,14 @@
+package core;
+
+class Table{
+	
+	public void printTable(int num) {
+
+	}
+	
+}
+public class P027_Synchronization {
+	public static void main(String[] args) {
+
+	}
+}
