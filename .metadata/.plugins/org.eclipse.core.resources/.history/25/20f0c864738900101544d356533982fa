@@ -1,0 +1,10 @@
+package core;
+
+import java.util.Hashtable;
+
+public class P034_HashTable {
+	public static void main(String[] args) {
+		Hashtable map = new Hashtable();
+		
+	}
+}
