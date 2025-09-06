@@ -1,0 +1,22 @@
+package dbconnection;
+
+import java.util.Scanner;
+class User{
+	public void insertData(int id,String name,long contact) {
+		
+	}
+}
+public class DBConnectivity {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter id : ");
+		int id = sc.nextInt();
+		System.out.println("enter name : ");
+		String name = sc.next();
+		System.out.println("enter contact : ");
+		long contact = sc.nextLong();
+		
+		
+
+	}
+}

@@ -41,7 +41,7 @@ public class P026_Thread {
 		Thread t = new Thread();
 		t.setName("MyTHread");
 		System.out.println(t);
-
+		long startTime = System.currentTimeMillis();
 		for (int i = 1; i <= 5; i++) {
 			try {
 				System.out.println(t + " i = " + i);
@@ -56,5 +56,9 @@ public class P026_Thread {
 		
 		MyNewThread t2 = new MyNewThread();
 		t2.run();
+		
+		long endTime = System.currentTimeMillis();
+		
+		System.out.println(endTime - startTime);
 	}
 }

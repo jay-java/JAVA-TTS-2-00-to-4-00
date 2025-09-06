@@ -1,0 +1,12 @@
+package core;
+
+public class P035_StringBufferBuilder {
+	public static void main(String[] args) {
+		StringBuffer s =new StringBuffer("hello java");//slow
+		System.out.println(s);
+		s.append("tech");
+		
+		StringBuilder s1 = new StringBuilder("java");//faster
+		
+	}
+}
