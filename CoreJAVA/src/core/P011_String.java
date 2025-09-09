@@ -5,7 +5,7 @@ public class P011_String {
 		char[] c=  {'J','A','V','A'};
 		System.out.println(c);
 		
-		String name ="hello java";
+		String name ="hello javaw567658%^&*&";
 		System.out.println(name);
 		System.out.println(name.length());
 		System.out.println(name.charAt(6));
