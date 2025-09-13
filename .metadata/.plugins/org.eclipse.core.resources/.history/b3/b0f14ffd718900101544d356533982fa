@@ -1,7 +1,0 @@
-package core;
-
-public class P033_Map {
-	public static void main(String[] args) {
-		
-	}
-}

@@ -6,6 +6,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import dao.UserDao;
 import model.User;
@@ -51,11 +52,35 @@ public class UserController extends HttpServlet {
 			u.setEmail(request.getParameter("email"));
 			u.setPassword(request.getParameter("password"));
 			System.out.println(u);
-			UserDao.insertUser(u);
-			response.sendRedirect("login.jsp");
+			boolean flag = UserDao.checkEmail(request.getParameter("email"));
+			if (flag == false) {
+				UserDao.insertUser(u);
+				response.sendRedirect("login.jsp");
+			} else {
+				request.setAttribute("msg", "Email already exist!");
+				request.getRequestDispatcher("register.jsp").forward(request, response);
+			}
 		}
 
 		else if (action.equalsIgnoreCase("login")) {
+			String email = request.getParameter("email");
+			String pass = request.getParameter("password");
+			boolean flag = UserDao.checkEmail(request.getParameter("email"));
+			if (flag == true) {
+				User u = UserDao.userLogin(email, pass);
+				if(u!=null) {
+					HttpSession session = request.getSession();
+					session.setAttribute("data", u);
+					request.getRequestDispatcher("home.jsp").forward(request, response);
+				}
+				else {
+					request.setAttribute("msg", "Password is incorrect");
+					request.getRequestDispatcher("login.jsp").forward(request, response);
+				}
+			} else {
+				request.setAttribute("msg", "Account doesn't exist");
+				request.getRequestDispatcher("login.jsp").forward(request, response);
+			}
 
 		} else if (action.equalsIgnoreCase("edit")) {
 

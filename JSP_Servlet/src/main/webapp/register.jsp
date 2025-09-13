@@ -7,7 +7,21 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<%-- <% scriplets %> --%>
+	<%
+	String msg = (String) request.getAttribute("msg");
+	%>
+	<%
+	if (msg != null) {
+	%>
+	<h3>
+		<%
+		out.print(msg);
+		%>
+	</h3>
+	<%
+	}
+	%>
 	<form action="UserController" method="post">
 		<table>
 			<tr>
@@ -40,7 +54,9 @@
 			</tr>
 		</table>
 	</form>
-
+	<h1>
+		<a href="login.jsp">If already have an account click here</a>
+	</h1>
 
 </body>
 </html>
