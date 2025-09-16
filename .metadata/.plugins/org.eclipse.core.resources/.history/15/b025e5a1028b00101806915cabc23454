@@ -1,7 +1,0 @@
-package dbconnection;
-
-public class DBConnectivity {
-	public static void main(String[] args) {
-		
-	}
-}

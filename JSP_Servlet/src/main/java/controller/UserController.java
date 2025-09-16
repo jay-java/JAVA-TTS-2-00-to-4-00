@@ -68,12 +68,11 @@ public class UserController extends HttpServlet {
 			boolean flag = UserDao.checkEmail(request.getParameter("email"));
 			if (flag == true) {
 				User u = UserDao.userLogin(email, pass);
-				if(u!=null) {
+				if (u != null) {
 					HttpSession session = request.getSession();
 					session.setAttribute("data", u);
 					request.getRequestDispatcher("home.jsp").forward(request, response);
-				}
-				else {
+				} else {
 					request.setAttribute("msg", "Password is incorrect");
 					request.getRequestDispatcher("login.jsp").forward(request, response);
 				}
@@ -83,7 +82,22 @@ public class UserController extends HttpServlet {
 			}
 
 		} else if (action.equalsIgnoreCase("edit")) {
+			int id = Integer.parseInt(request.getParameter("id"));
+			User u = UserDao.getUserById(id);
+			request.setAttribute("user", u);
+			request.getRequestDispatcher("update.jsp").forward(request, response);
+		}
 
+		else if (action.equalsIgnoreCase("update")) {
+			User u = new User();
+			u.setId(Integer.parseInt(request.getParameter("id")));
+			u.setName(request.getParameter("name"));
+			u.setContact(Long.parseLong(request.getParameter("contact")));
+			u.setAddress(request.getParameter("address"));
+			u.setEmail(request.getParameter("email"));
+			u.setPassword(request.getParameter("password"));
+			UserDao.updateUser(u);
+			response.sendRedirect("home.jsp");
 		}
 
 	}

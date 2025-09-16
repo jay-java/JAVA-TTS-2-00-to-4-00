@@ -1,9 +1,0 @@
-package core;
-
-public class P035_StringBufferBuilder {
-	public static void main(String[] args) {
-		StringBuffer s =new StringBuffer("hello java");
-		System.out.println(s);
-		s.append("tech");
-	}
-}
