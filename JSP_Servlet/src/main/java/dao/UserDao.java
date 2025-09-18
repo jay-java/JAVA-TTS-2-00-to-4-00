@@ -132,4 +132,17 @@ public class UserDao {
 			e.printStackTrace();
 		}
 	}
+
+	public static void deleteUser(int id) {
+		try {
+			Connection conn = DBConnection.createConnection();
+			String url = "delete from user where id=?";
+			PreparedStatement pst = conn.prepareStatement(url);
+			pst.setInt(1, id);
+			pst.executeUpdate();
+			System.out.println("deleted");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 }

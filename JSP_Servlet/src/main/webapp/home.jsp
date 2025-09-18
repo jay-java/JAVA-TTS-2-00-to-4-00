@@ -20,6 +20,14 @@
 <title>Hello, world!</title>
 </head>
 <body>
+
+	<%
+	response.setHeader("Cache-Control", "no-cache");
+	response.setHeader("Cache-Control", "no-store");
+	response.setHeader("Pragma", "no-cache");
+	response.setDateHeader("Expires", 0);
+	%>
+
 	<%
 	User u = null;
 	if (session.getAttribute("data") != null) {
@@ -40,7 +48,7 @@
 		<table class="table">
 			<thead>
 				<tr>
-					<th scope="col">Id</th>
+					<th scope="col">Sr No.</th>
 					<th scope="col">Name</th>
 					<th scope="col">Contact</th>
 					<th scope="col">Address</th>
@@ -55,10 +63,14 @@
 				List<User> list = UserDao.getAllUsers();
 				%>
 				<%
+				int counter = 0;
+				%>
+				<%
 				for (User u1 : list) {
+					counter++;
 				%>
 				<tr>
-					<th scope="row"><%=u1.getId()%></th>
+					<th scope="row"><%=counter%></th>
 					<td><%=u1.getName()%></td>
 					<td><%=u1.getContact()%></td>
 					<td><%=u1.getAddress()%></td>
@@ -66,17 +78,21 @@
 					<td><%=u1.getPassword()%></td>
 					<td>
 						<form action="UserController" method="post">
-							<input type="hidden" name="id" value="<%=u1.getId()%>"> 
-							<input type="submit" name="action" value="edit">
+							<input type="hidden" name="id" value="<%=u1.getId()%>"> <input
+								type="submit" name="action" value="edit">
 						</form>
 					</td>
-					<td><a href="">Delete</a></td>
+					<td><a href="UserController?action=delete&id=<%=u.getId()%>">Delete</a></td>
+					<td><a href="delete.jsp?id=<%=u.getId()%>">Delete</a></td>
 				</tr>
 				<%
 				}
 				%>
 			</tbody>
 		</table>
+		<h1 class="text-center">
+			<a href="logout.jsp">Logout</a>
+		</h1>
 	</div>
 
 	<!-- Optional JavaScript; choose one of the two! -->
