@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@include file="header.jsp"%>
+<%@include file="doctor-header.jsp"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,7 +14,7 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
 					<div class="section-title text-center">
-						<h2 class="text-md mb-2">Doctor Registration</h2>
+						<h2 class="text-md mb-2">Doctor Profile</h2>
 						<div class="divider mx-auto my-4"></div>
 					</div>
 				</div>
@@ -35,60 +35,60 @@
 						<div class="row">
 							<div class="col-lg-6">
 								<div class="form-group">
+									<input name="id" id="name" type="hidden" class="form-control"
+										value="<%=d.getId()%>">
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="form-group">
 									<input name="name" id="name" type="text" class="form-control"
-										placeholder="Your Full Name">
+										value="<%=d.getName()%>">
 								</div>
 							</div>
 
 							<div class="col-lg-6">
 								<div class="form-group">
 									<input name="contact" id="email" type="text"
-										class="form-control" placeholder="Your Contact">
+										class="form-control" value="<%=d.getContact()%>">
 								</div>
 							</div>
 							<div class="col-lg-6">
 								<div class="form-group">
 									<input name="address" id="subject" type="text"
-										class="form-control" placeholder="Your Clinic Address">
+										class="form-control" value="<%=d.getAddress()%>">
 								</div>
 							</div>
 							<div class="col-lg-6">
 								<div class="form-group">
 									<input name="speciality" id="subject" type="text"
-										class="form-control" placeholder="Your Speciality">
+										class="form-control" value="<%=d.getSpeciality()%>">
 								</div>
 							</div>
 							<div class="col-lg-6">
 								<div class="form-group">
 									<input name="exp" id="subject" type="text" class="form-control"
-										placeholder="Experience">
+										value="<%=d.getExperience()%>">
 								</div>
 							</div>
 							<div class="col-lg-6">
 								<div class="form-group">
 									<input name="email" id="phone" type="email"
-										class="form-control" placeholder="Your Email">
+										class="form-control" value="<%=d.getEmail()%>">
 								</div>
 							</div>
-							<div class="col-lg-6">
-								<div class="form-group">
-									<input name="password" id="phone" type="password"
-										class="form-control" placeholder="Your Password">
-								</div>
-							</div>
+
 						</div>
 
 
 
 						<div class="text-center">
 							<input class="btn btn-main btn-round-full" name="action"
-								type="submit" value="Register"></input>
+								type="submit" value="update"></input>
 						</div>
 					</form>
 				</div>
 			</div>
 		</div>
 	</section>
-
 </body>
 </html>

@@ -21,7 +21,7 @@
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12">
 					<form id="contact-form" class="contact__form " method="post"
-						action="mail.php">
+						action="Doctor">
 						<!-- form message -->
 						<div class="row">
 							<div class="col-12">
@@ -34,14 +34,14 @@
 						<div class="row">
 							<div class="col-lg-12">
 								<div class="form-group">
-									<input name="phone" id="phone" type="text" class="form-control"
-										placeholder="Your Email">
+									<input name="email" id="phone" type="email"
+										class="form-control" placeholder="Your Email">
 								</div>
 							</div>
 							<div class="col-lg-12">
 								<div class="form-group">
-									<input name="phone" id="phone" type="text" class="form-control"
-										placeholder="Your Password">
+									<input name="password" id="phone" type="password"
+										class="form-control" placeholder="Your Password">
 								</div>
 							</div>
 						</div>
@@ -49,17 +49,20 @@
 
 
 						<div class="text-center">
-							<input class="btn btn-main btn-round-full" name="submit"
+							<input class="btn btn-main btn-round-full" name="action"
 								type="submit" value="Login"></input>
 						</div>
 					</form>
 				</div>
 			</div>
-			<br><br>
+			<br>
+			<br>
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
 					<div class="section-title text-center">
-						<h4 class="text-md mb-2"><a href="doctor-forgot-password.jsp">Forgot Password ?</a></h4>
+						<h4 class="text-md mb-2">
+							<a href="doctor-forgot-password.jsp">Forgot Password ?</a>
+						</h4>
 						<div class="divider mx-auto my-4"></div>
 					</div>
 				</div>
