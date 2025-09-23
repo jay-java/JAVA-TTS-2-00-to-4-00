@@ -1,6 +1,9 @@
 package controller;
 
 import java.io.IOException;
+import java.util.Random;
+
+import javax.mail.MessagingException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -10,6 +13,7 @@ import javax.servlet.http.HttpSession;
 
 import dao.DoctorDao;
 import model.Doctor;
+import send_mail.EmailSender;
 
 /**
  * Servlet implementation class Doctor
@@ -80,6 +84,39 @@ public class DoctorContrller extends HttpServlet {
 			session.setAttribute("data", d);
 			request.getRequestDispatcher("doctor-profile.jsp").forward(request, response);
 
+		}
+
+		else if (action.equalsIgnoreCase("change password")) {
+			String email = request.getParameter("email");
+			String op = request.getParameter("op");
+			String np = request.getParameter("np");
+			String cnp = request.getParameter("cnp");
+			boolean flag = DoctorDao.checkOldPassword(email, op);
+			if (flag == true) {
+				if (np.equals(cnp)) {
+					DoctorDao.updatePass(email, np);
+					response.sendRedirect("doctor-home.jsp");
+				} else {
+					request.setAttribute("msg", "NP and CNP not matched");
+					request.getRequestDispatcher("doctor-change-password.jsp").forward(request, response);
+				}
+			} else {
+				request.setAttribute("msg", "Old pass incorrect");
+				request.getRequestDispatcher("doctor-change-password.jsp").forward(request, response);
+			}
+		}
+
+		else if (action.equalsIgnoreCase("send OTP")) {
+			String email = request.getParameter("email");
+			Random r = new Random();
+			int num = r.nextInt(100000, 999999);
+			System.out.println(num);
+			try {
+				EmailSender.sendOTP(email, num);
+				
+			} catch (MessagingException e) {
+				e.printStackTrace();
+			}
 		}
 	}
 

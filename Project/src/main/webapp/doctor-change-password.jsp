@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@include file="header.jsp"%>
+<%@include file="doctor-header.jsp"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,9 +13,22 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
 					<div class="section-title text-center">
-						<h2 class="text-md mb-2">Doctor Forgot Password</h2>
+						<h2 class="text-md mb-2">Doctor Profile</h2>
 						<div class="divider mx-auto my-4"></div>
 					</div>
+					<%
+					String msg = (String) request.getAttribute("msg");
+					%>
+					<%
+					if (msg != null) {
+					%>
+					<div class="section-title text-center">
+						<h4 class="text-md mb-2"><%=msg%></h4>
+					</div>
+
+					<%
+					}
+					%>
 				</div>
 			</div>
 			<div class="row">
@@ -32,33 +45,37 @@
 						</div>
 
 						<div class="row">
+							<input name="email" id="name" type="hidden" class="form-control"
+								value="<%=d.getEmail()%>">
 							<div class="col-lg-12">
 								<div class="form-group">
-									<input name="email" id="phone" type="text" class="form-control"
-										placeholder="Your Email">
+									<input name="op" id="name" type="text" class="form-control"
+										placeholder="Old Password">
 								</div>
 							</div>
+							<div class="col-lg-12">
+								<div class="form-group">
+									<input name="np" id="name" type="text" class="form-control"
+										placeholder="New Password">
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="form-group">
+									<input name="cnp" id="name" type="text" class="form-control"
+										placeholder="Confirm New Password">
+								</div>
+							</div>
+
+
 						</div>
 
 
 
 						<div class="text-center">
 							<input class="btn btn-main btn-round-full" name="action"
-								type="submit" value="send OTP"></input>
+								type="submit" value="change password"></input>
 						</div>
 					</form>
-				</div>
-			</div>
-			<br>
-			<br>
-			<div class="row justify-content-center">
-				<div class="col-lg-6">
-					<div class="section-title text-center">
-						<h4 class="text-md mb-2">
-							<a href="patient-forgot-password.jsp">Forgot Password ?</a>
-						</h4>
-						<div class="divider mx-auto my-4"></div>
-					</div>
 				</div>
 			</div>
 		</div>

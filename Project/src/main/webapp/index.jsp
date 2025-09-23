@@ -9,7 +9,6 @@
 
 <body id="top">
 
-
 	<!-- Slider Start -->
 	<section class="banner">
 		<div class="container">

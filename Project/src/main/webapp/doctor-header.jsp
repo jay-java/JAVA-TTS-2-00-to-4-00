@@ -77,9 +77,9 @@
 							<ul class="dropdown-menu" aria-labelledby="dropdown03">
 								<li><a class="dropdown-item"
 									href="doctor-profile.jsp">Profile</a></li>
-								<li><a class="dropdown-item" href="patient-login.jsp">Change
+								<li><a class="dropdown-item" href="doctor-change-password.jsp">Change
 										Password </a></li>
-								<li><a class="dropdown-item" href="patient-login.jsp">Logout
+								<li><a class="dropdown-item" href="doctor-logout.jsp">Logout
 								</a></li>
 							</ul></li>
 
