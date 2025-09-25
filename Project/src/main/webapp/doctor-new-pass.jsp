@@ -21,7 +21,7 @@
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12">
 					<form id="contact-form" class="contact__form " method="post"
-						action="mail.php">
+						action="Doctor">
 						<!-- form message -->
 						<div class="row">
 							<div class="col-12">
@@ -30,17 +30,20 @@
 									successfully.</div>
 							</div>
 						</div>
-
+						<%
+						String email = (String) request.getAttribute("email");
+						%>
+						<input type="hidden" name="email" value="<%=email%>">
 						<div class="row">
 							<div class="col-lg-12">
 								<div class="form-group">
-									<input name="phone" id="phone" type="text" class="form-control"
+									<input name="np" id="phone" type="text" class="form-control"
 										placeholder="New Password">
 								</div>
 							</div>
 							<div class="col-lg-12">
 								<div class="form-group">
-									<input name="phone" id="phone" type="text" class="form-control"
+									<input name="cnp" id="phone" type="text" class="form-control"
 										placeholder="Confirm New Password">
 								</div>
 							</div>
@@ -49,13 +52,13 @@
 
 
 						<div class="text-center">
-							<input class="btn btn-main btn-round-full" name="submit"
+							<input class="btn btn-main btn-round-full" name="action"
 								type="submit" value="new password"></input>
 						</div>
 					</form>
 				</div>
 			</div>
-			
+
 		</div>
 	</section>
 </body>

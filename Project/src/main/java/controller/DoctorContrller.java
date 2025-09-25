@@ -113,9 +113,35 @@ public class DoctorContrller extends HttpServlet {
 			System.out.println(num);
 			try {
 				EmailSender.sendOTP(email, num);
-				
+				request.setAttribute("otp", num);
+				request.setAttribute("email", email);
+				request.getRequestDispatcher("doctor-verify-otp.jsp").forward(request, response);
+
 			} catch (MessagingException e) {
 				e.printStackTrace();
+			}
+		} else if (action.equalsIgnoreCase("verify")) {
+			String email = request.getParameter("email");
+			int otp1 = Integer.parseInt(request.getParameter("otp1"));
+			int otp2 = Integer.parseInt(request.getParameter("otp2"));
+			if (otp1 == otp2) {
+				request.setAttribute("email", email);
+				request.getRequestDispatcher("doctor-new-pass.jsp").forward(request, response);
+			} else {
+				request.setAttribute("msg", "OTP not matched");
+				request.setAttribute("otp", otp1);
+				request.setAttribute("email", email);
+				request.getRequestDispatcher("doctor-verify-otp.jsp").forward(request, response);
+			}
+		} else if (action.equalsIgnoreCase("new password")) {
+			String email = request.getParameter("email");
+			String np = request.getParameter("np");
+			String cnp = request.getParameter("cnp");
+			if (np.equals(cnp)) {
+				DoctorDao.updatePass(email, np);
+				response.sendRedirect("doctor-login.jsp");
+			} else {
+
 			}
 		}
 	}

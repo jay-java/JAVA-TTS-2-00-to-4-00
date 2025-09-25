@@ -40,8 +40,6 @@
 							</div>
 						</div>
 
-
-
 						<div class="text-center">
 							<input class="btn btn-main btn-round-full" name="action"
 								type="submit" value="send OTP"></input>

@@ -21,7 +21,7 @@
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12">
 					<form id="contact-form" class="contact__form " method="post"
-						action="mail.php">
+						action="Patient">
 						<!-- form message -->
 						<div class="row">
 							<div class="col-12">
@@ -41,39 +41,33 @@
 
 							<div class="col-lg-6">
 								<div class="form-group">
-									<input name="email" id="email" type="email"
+									<input name="contact" id="email" type="text"
 										class="form-control" placeholder="Your Contact">
 								</div>
 							</div>
 							<div class="col-lg-6">
 								<div class="form-group">
-									<input name="subject" id="subject" type="text"
+									<input name="address" id="subject" type="text"
 										class="form-control" placeholder="Your Address">
 								</div>
 							</div>
 							<div class="col-lg-6">
 								<div class="form-group">
-									<input name="subject" id="subject" type="text"
-										class="form-control" placeholder="Your Age">
+									<input name="email" id="subject" type="email"
+										class="form-control" placeholder="Your Email">
 								</div>
 							</div>
 							<div class="col-lg-6">
 								<div class="form-group">
-									<input name="phone" id="phone" type="text" class="form-control"
-										placeholder="Your Email">
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<div class="form-group">
-									<input name="phone" id="phone" type="text" class="form-control"
-										placeholder="Your Password">
+									<input name="password" id="phone" type="password"
+										class="form-control" placeholder="Your Password">
 								</div>
 							</div>
 						</div>
 
 
 						<div class="text-center">
-							<input class="btn btn-main btn-round-full" name="submit"
+							<input class="btn btn-main btn-round-full" name="action"
 								type="submit" value="Register"></input>
 						</div>
 					</form>
