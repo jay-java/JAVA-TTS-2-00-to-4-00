@@ -3,6 +3,8 @@ package dao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
 
 import connection.DBConnection;
 import model.Doctor;
@@ -11,15 +13,16 @@ public class DoctorDao {
 	public static void insertDoctor(Doctor d) {
 		try {
 			Connection conn = DBConnection.createConnection();
-			String sql = "insert into doctor(name,contact,address,speciality,exp,email,password) values(?,?,?,?,?,?,?)";
+			String sql = "insert into doctor(image,name,contact,address,speciality,exp,email,password) values(?,?,?,?,?,?,?,?)";
 			PreparedStatement pst = conn.prepareStatement(sql);
-			pst.setString(1, d.getName());
-			pst.setLong(2, d.getContact());
-			pst.setString(3, d.getAddress());
-			pst.setString(4, d.getSpeciality());
-			pst.setString(5, d.getExperience());
-			pst.setString(6, d.getEmail());
-			pst.setString(7, d.getPassword());
+			pst.setString(1, d.getImage());
+			pst.setString(2, d.getName());
+			pst.setLong(3, d.getContact());
+			pst.setString(4, d.getAddress());
+			pst.setString(5, d.getSpeciality());
+			pst.setString(6, d.getExperience());
+			pst.setString(7, d.getEmail());
+			pst.setString(8, d.getPassword());
 			pst.executeUpdate();
 			System.out.println("data inserted");
 		} catch (Exception e) {
@@ -39,6 +42,7 @@ public class DoctorDao {
 			if (rs.next()) {
 				d = new Doctor();
 				d.setId(rs.getInt("id"));
+				d.setImage(rs.getString("image"));
 				d.setName(rs.getString("name"));
 				d.setContact(rs.getLong("contact"));
 				d.setAddress(rs.getString("address"));
@@ -104,4 +108,56 @@ public class DoctorDao {
 			e.printStackTrace();
 		}
 	}
+
+	public static List<Doctor> getAllDoctors() {
+		List<Doctor> list = new ArrayList<Doctor>();
+
+		try {
+			Connection conn = DBConnection.createConnection();
+			String sql = "select * from doctor";
+			PreparedStatement pst = conn.prepareStatement(sql);
+			ResultSet rs = pst.executeQuery();
+			while (rs.next()) {
+				Doctor d = new Doctor();
+				d.setId(rs.getInt("id"));
+				d.setImage(rs.getString("image"));
+				d.setName(rs.getString("name"));
+				d.setContact(rs.getLong("contact"));
+				d.setAddress(rs.getString("address"));
+				d.setSpeciality(rs.getString("speciality"));
+				d.setExperience(rs.getString("exp"));
+				list.add(d);
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return list;
+	}
+
+	public static Doctor getDoctorById(int id) {
+		Doctor d = null;
+		try {
+			Connection conn = DBConnection.createConnection();
+			String sql = "select * from doctor where id = ?";
+			PreparedStatement pst = conn.prepareStatement(sql);
+			pst.setInt(1, id);
+			ResultSet rs = pst.executeQuery();
+			if (rs.next()) {
+				d = new Doctor();
+				d.setId(rs.getInt("id"));
+				d.setImage(rs.getString("image"));
+				d.setName(rs.getString("name"));
+				d.setContact(rs.getLong("contact"));
+				d.setAddress(rs.getString("address"));
+				d.setSpeciality(rs.getString("speciality"));
+				d.setExperience(rs.getString("exp"));
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return d;
+	}
+
 }

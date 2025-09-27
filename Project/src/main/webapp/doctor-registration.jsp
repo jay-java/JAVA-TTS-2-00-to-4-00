@@ -22,7 +22,7 @@
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12">
 					<form id="contact-form" class="contact__form " method="post"
-						action="Doctor">
+						action="Doctor" enctype="multipart/form-data">
 						<!-- form message -->
 						<div class="row">
 							<div class="col-12">
@@ -33,6 +33,12 @@
 						</div>
 
 						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-group">
+									<input name="image" id="name" type="file" class="form-control"
+										placeholder="Select Photo">
+								</div>
+							</div>
 							<div class="col-lg-6">
 								<div class="form-group">
 									<input name="name" id="name" type="text" class="form-control"

@@ -2,7 +2,7 @@ package model;
 
 public class Doctor {
 	private int id;
-	private String name, address, speciality, experience, email, password;
+	private String image, name, address, speciality, experience, email, password;
 	private long contact;
 
 	public int getId() {
@@ -11,6 +11,14 @@ public class Doctor {
 
 	public void setId(int id) {
 		this.id = id;
+	}
+
+	public String getImage() {
+		return image;
+	}
+
+	public void setImage(String image) {
+		this.image = image;
 	}
 
 	public String getName() {
@@ -71,9 +79,9 @@ public class Doctor {
 
 	@Override
 	public String toString() {
-		return "Doctor [id=" + id + ", name=" + name + ", address=" + address + ", speciality=" + speciality
-				+ ", experience=" + experience + ", email=" + email + ", password=" + password + ", contact=" + contact
-				+ "]";
+		return "Doctor [id=" + id + ", image=" + image + ", name=" + name + ", address=" + address + ", speciality="
+				+ speciality + ", experience=" + experience + ", email=" + email + ", password=" + password
+				+ ", contact=" + contact + "]";
 	}
 
 }

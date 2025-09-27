@@ -33,12 +33,18 @@
 						</div>
 
 						<div class="row">
+							<input name="id" id="name" type="hidden" class="form-control"
+								value="<%=d.getId()%>">
+
+
+							<img src="imagess/<%=d.getImage()%>">
 							<div class="col-lg-6">
 								<div class="form-group">
-									<input name="id" id="name" type="hidden" class="form-control"
-										value="<%=d.getId()%>">
+									<input name="image" id="name" type="file" class="form-control">
 								</div>
 							</div>
+
+
 							<div class="col-lg-6">
 								<div class="form-group">
 									<input name="name" id="name" type="text" class="form-control"
