@@ -47,7 +47,7 @@
 							temporibus, deleniti vero perferendis molestias, ducimus facilis,
 							sunt minima. Tempora, amet quasi asperiores voluptas?</p>
 
-						<a href="appoinment.html"
+						<a href="patient-appointment.jsp?did=<%=id%>"
 							class="btn btn-main-2 btn-round-full mt-3">Make an Appoinment<i
 							class="icofont-simple-right ml-2  "></i></a>
 					</div>
