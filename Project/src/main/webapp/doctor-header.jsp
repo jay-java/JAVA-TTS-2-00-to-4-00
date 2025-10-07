@@ -65,7 +65,7 @@
 							aria-expanded="false">Appointments <i
 								class="icofont-thin-down"></i></a>
 							<ul class="dropdown-menu" aria-labelledby="dropdown03">
-								<li><a class="dropdown-item" href="doctor-registration.jsp">Pending</a></li>
+								<li><a class="dropdown-item" href="doctor-pending-appointment.jsp">Pending</a></li>
 								<li><a class="dropdown-item" href="doctor-login.jsp">Completed
 								</a></li>
 							</ul></li>

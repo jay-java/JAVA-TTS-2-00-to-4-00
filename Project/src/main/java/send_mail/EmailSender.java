@@ -38,5 +38,30 @@ public class EmailSender {
 		Transport.send(msg);
 	}
 	
+	public static void confirmAppByDoctor(String patientEmail) throws MessagingException {
+		final String fromEmail = "doctorfinder523@gmail.com"; // sender email
+		final String password = "fanumvzyraszkgpd"; // use App Password if 2FA enabled
+
+		Properties props = new Properties();
+		props.put("mail.smtp.host", "smtp.gmail.com");
+		props.put("mail.smtp.port", "587");
+		props.put("mail.smtp.auth", "true");
+		props.put("mail.smtp.starttls.enable", "true");
+
+		Session session = Session.getInstance(props, new Authenticator() {
+			protected PasswordAuthentication getPasswordAuthentication() {
+				return new PasswordAuthentication(fromEmail, password);
+			}
+		});
+
+		Message msg = new MimeMessage(session);
+		msg.setFrom(new InternetAddress(fromEmail));
+		msg.setRecipients(Message.RecipientType.TO, InternetAddress.parse(toEmail));
+		msg.setSubject("Your OTP Code");
+		msg.setText("Your OTP is: ");
+
+		Transport.send(msg);
+	}
+	
 	
 }

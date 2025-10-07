@@ -39,6 +39,17 @@
 								</div>
 							</div>
 						</div>
+						<!-- <div class="row">
+							<div class="col-lg-12">
+								<div class="form-group">
+									<select name="time">
+										<option value="11:00 AM - 1:00 PM">11:00 AM - 1:00 PM
+										<option value="2:00 PM - 4:00 PM">2:00 PM - 4:00 PM
+										<option value="5:00 PM - 7:00 PM">5:00 PM - 7:00 PM
+									</select>
+								</div>
+							</div>
+						</div> -->
 						<div class="row">
 							<div class="col-lg-12">
 								<div class="form-group">

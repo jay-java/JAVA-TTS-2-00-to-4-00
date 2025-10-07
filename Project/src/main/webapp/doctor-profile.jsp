@@ -37,7 +37,7 @@
 								value="<%=d.getId()%>">
 
 
-							<img src="imagess/<%=d.getImage()%>">
+							<img src="imagess/<%=d.getImage()%>" height="100" width="100">
 							<div class="col-lg-6">
 								<div class="form-group">
 									<input name="image" id="name" type="file" class="form-control">
