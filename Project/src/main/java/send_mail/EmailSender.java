@@ -37,7 +37,7 @@ public class EmailSender {
 
 		Transport.send(msg);
 	}
-	
+
 	public static void confirmAppByDoctor(String patientEmail) throws MessagingException {
 		final String fromEmail = "doctorfinder523@gmail.com"; // sender email
 		final String password = "fanumvzyraszkgpd"; // use App Password if 2FA enabled
@@ -56,12 +56,11 @@ public class EmailSender {
 
 		Message msg = new MimeMessage(session);
 		msg.setFrom(new InternetAddress(fromEmail));
-		msg.setRecipients(Message.RecipientType.TO, InternetAddress.parse(toEmail));
+		msg.setRecipients(Message.RecipientType.TO, InternetAddress.parse(patientEmail));
 		msg.setSubject("Your OTP Code");
 		msg.setText("Your OTP is: ");
 
 		Transport.send(msg);
 	}
-	
-	
+
 }
