@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.Runnable"/>
-    <fullyQualifiedTypeName name="core.MyThread"/>
     <fullyQualifiedTypeName name="core.MyNewThread"/>
     <fullyQualifiedTypeName name="core.Table"/>
     <fullyQualifiedTypeName name="core.MyTable"/>
@@ -30,7 +28,6 @@
     <fullyQualifiedTypeName name="model.User"/>
     <fullyQualifiedTypeName name="dao.UserDao"/>
     <fullyQualifiedTypeName name="java.lang.Long"/>
-    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="javax.mail.MessagingException"/>
     <fullyQualifiedTypeName name="javax.mail.Session"/>
@@ -60,4 +57,7 @@
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="model.Appointment"/>
+    <fullyQualifiedTypeName name="org.eclipse.jdt.internal.compiler.batch.BatchCompilerRequestor"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequestWrapper"/>
 </qualifiedTypeNameHistroy>
