@@ -12,5 +12,9 @@
 		<property name="hibernate.show_sql">true</property>
 		<property name="hibernate.format_sql">true</property>
 		<mapping class="com.hibernate.User" />
+		<mapping class="onetoone.Student" />
+		<mapping class="onetoone.Course" />
+		<mapping class="onetomany_manytoone.Students" />
+		<mapping class="onetomany_manytoone.Courses" />
 	</session-factory>
 </hibernate-configuration>
