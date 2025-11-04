@@ -394,3 +394,75 @@
 2025-10-30 15:22:42,919 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\test\resources
 2025-10-30 15:22:48,659 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\main\resources
 2025-10-30 15:22:48,660 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\test\resources
+2025-10-30 15:23:17,552 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\main\resources
+2025-10-30 15:23:17,555 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\test\resources
+2025-10-30 15:23:22,796 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\main\resources
+2025-10-30 15:23:22,798 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\test\resources
+2025-10-30 15:23:32,695 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\main\resources
+2025-10-30 15:23:32,696 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\test\resources
+2025-10-30 15:27:14,163 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2025-10-30 15:27:37,885 [main] INFO  org.hibernate.cfg.Environment - Hibernate 3.5.6-Final
+2025-10-30 15:27:37,896 [main] INFO  org.hibernate.cfg.Environment - hibernate.properties not found
+2025-10-30 15:27:37,901 [main] INFO  org.hibernate.cfg.Environment - Bytecode provider name : javassist
+2025-10-30 15:27:37,909 [main] INFO  org.hibernate.cfg.Environment - using JDK 1.4 java.sql.Timestamp handling
+2025-10-30 15:27:38,012 [main] INFO  org.hibernate.cfg.Configuration - configuring from XML document
+2025-10-30 15:27:38,013 [main] INFO  org.hibernate.cfg.Configuration - Configured SessionFactory: null
+2025-11-01 14:39:06,604 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-11-01 14:40:32,950 [Worker-0: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2025-11-01 14:40:33,279 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\main\resources
+2025-11-01 14:40:33,283 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\test\resources
+2025-11-01 14:40:40,058 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\main\resources
+2025-11-01 14:40:40,062 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\test\resources
+2025-11-01 14:40:45,168 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\main\resources
+2025-11-01 14:40:45,172 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\test\resources
+2025-11-01 14:41:17,429 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\main\resources
+2025-11-01 14:41:17,432 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\test\resources
+2025-11-01 14:41:42,347 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\main\resources
+2025-11-01 14:41:42,349 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\test\resources
+2025-11-01 14:42:05,277 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\main\resources
+2025-11-01 14:42:05,279 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\test\resources
+2025-11-01 14:42:20,804 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\main\resources
+2025-11-01 14:42:20,806 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\test\resources
+2025-11-01 14:42:36,100 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\main\resources
+2025-11-01 14:42:36,102 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\test\resources
+2025-11-01 14:42:45,209 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\main\resources
+2025-11-01 14:42:45,212 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\test\resources
+2025-11-01 14:42:57,082 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\main\resources
+2025-11-01 14:42:57,084 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\test\resources
+2025-11-01 14:43:01,411 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\main\resources
+2025-11-01 14:43:01,412 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\test\resources
+2025-11-01 14:43:07,043 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\main\resources
+2025-11-01 14:43:07,045 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\test\resources
+2025-11-01 14:43:42,370 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\main\resources
+2025-11-01 14:43:42,372 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\test\resources
+2025-11-01 14:44:29,389 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\main\resources
+2025-11-01 14:44:29,391 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\test\resources
+2025-11-01 14:44:46,975 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\main\resources
+2025-11-01 14:44:46,977 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\test\resources
+2025-11-01 14:44:54,303 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\main\resources
+2025-11-01 14:44:54,305 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\test\resources
+2025-11-01 14:45:04,945 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\main\resources
+2025-11-01 14:45:04,947 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\test\resources
+2025-11-01 14:45:16,729 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\main\resources
+2025-11-01 14:45:16,731 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\test\resources
+2025-11-01 14:45:25,227 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\main\resources
+2025-11-01 14:45:25,228 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\test\resources
+2025-11-01 14:46:41,204 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\main\resources
+2025-11-01 14:46:41,206 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\test\resources
+2025-11-01 14:46:51,802 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\main\resources
+2025-11-01 14:46:51,804 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\test\resources
+2025-11-01 14:47:06,490 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\main\resources
+2025-11-01 14:47:06,491 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\test\resources
+2025-11-01 14:47:11,656 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\main\resources
+2025-11-01 14:47:11,658 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\test\resources
+2025-11-01 14:48:17,366 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\main\resources
+2025-11-01 14:48:17,369 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\test\resources
+2025-11-01 14:48:31,641 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\main\resources
+2025-11-01 14:48:31,643 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\test\resources
+2025-11-01 14:48:32,676 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\main\resources
+2025-11-01 14:48:32,679 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\test\resources
+2025-11-01 14:49:15,956 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\main\resources
+2025-11-01 14:49:15,958 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\test\resources
+2025-11-01 14:50:09,852 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\main\resources
+2025-11-01 14:50:09,855 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 11-00\HibernateCore\src\test\resources
+2025-11-04 14:18:43,344 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

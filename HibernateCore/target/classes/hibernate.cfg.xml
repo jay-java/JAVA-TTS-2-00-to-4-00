@@ -11,10 +11,12 @@
 		<property name="hibernate.hbm2ddl.auto">update</property>
 		<property name="hibernate.show_sql">true</property>
 		<property name="hibernate.format_sql">true</property>
-		<mapping class="com.hibernate.User" />
+	<!-- 	<mapping class="com.hibernate.User" />
 		<mapping class="onetoone.Student" />
 		<mapping class="onetoone.Course" />
 		<mapping class="onetomany_manytoone.Students" />
-		<mapping class="onetomany_manytoone.Courses" />
+		<mapping class="onetomany_manytoone.Courses" /> -->
+		<mapping class="manytomany.Student1"/>
+		<mapping class="manytomany.Course1"/>
 	</session-factory>
 </hibernate-configuration>
