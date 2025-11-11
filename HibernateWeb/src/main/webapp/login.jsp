@@ -7,7 +7,20 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<%
+	String msg = (String) request.getAttribute("msg");
+	%>
+	<%
+	if (msg != null) {
+	%>
+	<h2>
+		<%
+		out.print(msg);
+		%>
+	</h2>
+	<%
+	}
+	%>
 	<form action="User" method="post">
 		<table>
 			<tr>
@@ -21,7 +34,7 @@
 			</tr>
 
 			<tr>
-				<td><input type="submit" name="action" value="register"></td>
+				<td><input type="submit" name="action" value="login"></td>
 			</tr>
 		</table>
 	</form>
