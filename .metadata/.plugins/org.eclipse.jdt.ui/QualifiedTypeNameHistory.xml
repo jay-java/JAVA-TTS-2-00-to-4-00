@@ -32,7 +32,6 @@
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="model.Appointment"/>
     <fullyQualifiedTypeName name="org.eclipse.jdt.internal.compiler.batch.BatchCompilerRequestor"/>
-    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequestWrapper"/>
     <fullyQualifiedTypeName name="com.hibernate.User"/>
     <fullyQualifiedTypeName name="javax.persistence.Table"/>
@@ -46,7 +45,6 @@
     <fullyQualifiedTypeName name="onetomany_manytoone.Course"/>
     <fullyQualifiedTypeName name="manytomany.Course1"/>
     <fullyQualifiedTypeName name="javax.persistence.ManyToMany"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="javax.persistence.Entity"/>
     <fullyQualifiedTypeName name="javax.persistence.Id"/>
@@ -58,6 +56,8 @@
     <fullyQualifiedTypeName name="org.hibernate.Transaction"/>
     <fullyQualifiedTypeName name="model.User"/>
     <fullyQualifiedTypeName name="org.hibernate.cfg.Configuration"/>
-    <fullyQualifiedTypeName name="dao.UserDao"/>
     <fullyQualifiedTypeName name="org.hibernate.Query"/>
+    <fullyQualifiedTypeName name="dao.UserDao"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>
