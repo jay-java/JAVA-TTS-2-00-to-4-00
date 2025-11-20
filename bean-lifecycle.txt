@@ -1,0 +1,15 @@
+spring bean llifecycle :
+1. using xml
+inside bean tag
+init-method="method name" destroy-method="method name"
+
+2. using inteface-
+initializingBean,disposableBean
+
+3.using annotation
+@PostConstruct->before java 9 default
+	after java 9 
+	add dependency in pom.xml
+@PreDestroy
+<context:annotation-config/>
+

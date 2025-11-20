@@ -1,5 +1,7 @@
 package reference;
 
+import org.springframework.context.annotation.Bean;
+
 public class Address {
 
 	private int aid;

@@ -3,6 +3,7 @@ package dao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,9 +11,9 @@ import connection.DBConnection;
 import model.Doctor;
 
 public class DoctorDao {
-	public static void insertDoctor(Doctor d) {
+	public static void insertDoctor(Doctor d) throws SQLException {
+		Connection conn = DBConnection.createConnection();
 		try {
-			Connection conn = DBConnection.createConnection();
 			String sql = "insert into doctor(image,name,contact,address,speciality,exp,email,password) values(?,?,?,?,?,?,?,?)";
 			PreparedStatement pst = conn.prepareStatement(sql);
 			pst.setString(1, d.getImage());
@@ -27,6 +28,8 @@ public class DoctorDao {
 			System.out.println("data inserted");
 		} catch (Exception e) {
 			e.printStackTrace();
+		} finally {
+			conn.close();
 		}
 	}
 
