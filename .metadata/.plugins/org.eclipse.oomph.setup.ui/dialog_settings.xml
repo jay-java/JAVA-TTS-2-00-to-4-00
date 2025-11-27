@@ -10,4 +10,8 @@
 	</section>
 	<section name="org.eclipse.oomph.setup.ui.wizards.SetupWizard$Updater">
 	</section>
+	<section name="org.eclipse.oomph.setup.ui.P2TaskUIServicesPrompter$UnsatisifiedRequirementsPrompter">
+		<item key="dialogWidth" value="700"/>
+		<item key="dialogHeight" value="500"/>
+	</section>
 </section>
