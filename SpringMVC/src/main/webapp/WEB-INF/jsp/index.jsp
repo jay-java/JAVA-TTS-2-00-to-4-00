@@ -11,8 +11,10 @@
 </head>
 <body>
 	index page
-	
-	<a href="register">Register</a>
+	<a href="${pageContext.request.contextPath}/register">Register</a>
+	<h1>
+		<a href="home">Home</a>
+	</h1>
 	<%-- 	<h1>
 		<a href="register">Register</a>
 	</h1>

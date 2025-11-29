@@ -9,9 +9,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.dao.UserDao;
 import com.model.User;
@@ -69,14 +71,32 @@ public class HomeController {
 //	}
 
 	@RequestMapping(value = "/add", method = RequestMethod.POST)
-	public String add(@ModelAttribute User u,Model m) {
+	public String add(@ModelAttribute User u, Model m) {
 		this.dao.insertOrUpdateUser(u);
 		m.addAttribute("list", this.dao.getAllUsers());
 		return "home";
 	}
 
 	@RequestMapping("/home")
-	public String home() {
+	public String home(Model m) {
+		m.addAttribute("list", this.dao.getAllUsers());
 		return "home";
 	}
+
+	@RequestMapping("/edit/{id}")
+	public ModelAndView editUser(@PathVariable("id") int id) {
+		User u = this.dao.getUserBydId(id);
+		ModelAndView m = new ModelAndView();
+		m.addObject("u", u);
+		m.setViewName("update");
+		return m;
+	}
+
+	@RequestMapping("/delete/{id}")
+	public String deleteUser(@PathVariable("id") int id, Model m, HttpServletRequest request) {
+		this.dao.deleteUser(id);
+		m.addAttribute("list", this.dao.getAllUsers());
+		return "home";
+	}
+
 }
