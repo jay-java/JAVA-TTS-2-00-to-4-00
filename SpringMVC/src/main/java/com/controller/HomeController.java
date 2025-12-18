@@ -43,7 +43,7 @@ public class HomeController {
 	public String index(Model m) {
 		m.addAttribute("number", 3245);
 		m.addAttribute("name", "my name is here");
-		m.addAttribute("double", 345.45);
+		m.addAttribute("double1", 345.45);
 		List list = new ArrayList();
 		list.add("java");
 		list.add(2353);

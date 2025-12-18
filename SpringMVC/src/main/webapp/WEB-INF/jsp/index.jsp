@@ -56,6 +56,7 @@
 
 	<h1>${number }</h1>
 	<h1>${name }</h1>
+	<h1>${double1 }</h1>
 	<h1>${list }</h1>
 	<c:forEach items="${list }" var="u">
 		<h1>${u }</h1>
