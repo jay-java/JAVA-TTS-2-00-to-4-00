@@ -26,4 +26,20 @@ public class UserService {
 	public User addUser(User u) {
 		return this.repo.save(u);
 	}
+	
+	
+	public User updaeUser(User u) {
+		return this.repo.save(u);
+	}
+
+	public User getUserByName(String name) {
+		return this.repo.findByName(name);
+	}
+
+	public User getUserByEmailNPass(String email, String password) {
+		return this.repo.findByEmailAndPassword(email, password);
+	}
+	
+	
+
 }
