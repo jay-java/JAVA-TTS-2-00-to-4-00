@@ -40,6 +40,5 @@ public class UserService {
 		return this.repo.findByEmailAndPassword(email, password);
 	}
 	
-	
 
 }

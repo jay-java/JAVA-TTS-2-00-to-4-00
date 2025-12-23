@@ -47,8 +47,9 @@ public class HomeController {
 	@PostMapping("/")
 	public User addUser(@RequestBody User u) {
 		return this.service.addUser(u);
+	}public HomeController() {
+		// TODO Auto-generated constructor stub
 	}
-
 	@GetMapping("/user/{id}")
 	public Optional<User> getUserById(@PathVariable("id") int id) {
 		System.out.println(id);
