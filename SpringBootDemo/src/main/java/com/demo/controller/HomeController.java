@@ -43,6 +43,15 @@ public class HomeController {
 	public List<User> getAllUsers() {
 		return this.service.getAllU();
 	}
+	
+	@GetMapping("/pageusers")
+	public List<User> getAlllUsers(
+			@RequestParam(value = "pageNumber", defaultValue = "0", required = false) Integer pageNumber,
+			@RequestParam(value = "pageSize", defaultValue = "5", required = false) Integer pageSize){
+		System.out.println(pageNumber);
+		System.out.println(pageSize);
+		return this.service.fetchAlllUser(pageNumber, pageSize);
+	}
 
 	@PostMapping("/")
 	public User addUser(@RequestBody User u) {
